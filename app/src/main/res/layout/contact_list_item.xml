@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f0f0f0"
+    android:layout_marginBottom="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.login.ContactListActivity">
+
+    <ImageView
+        android:id="@+id/profile_contact"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    <FrameLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/message_body"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_toRightOf="@id/profile_contact">
+
+        <LinearLayout
+            android:gravity="end"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/contact_jid_string"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="user@example.com"
+               tools:text="user@server.com"
+               android:textSize="26dp"
+               android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/sub_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subscription type"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
